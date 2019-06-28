@@ -5,7 +5,7 @@
 body{
     background-color: #b3ffd9;
 }
-div{
+.forInput{
     display: flex;
     align-items: center;
     align-content: center;
@@ -30,8 +30,15 @@ div{
 #addTaskBut:active{
     background-color: #3b9b6b;
 }
-.divForTextTask{
+
+li{
     background-color: #a0a8a4;
-    size: 50%;
-    text-justify: auto;
+    width: 50%;
+    text-align: justify;
+    text-justify: inter-word;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 5px 0 5px 0;
 }
