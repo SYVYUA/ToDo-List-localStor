@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #b3ffd9;
+}
+div{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 5px 0 5px 0;
+}
+#inputField{
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+#addTaskBut{
+    border: none;
+    background-color: bisque;
+    margin: 0 0 0 5px;
+    padding: 10px;
+    outline: none;
+}
+#addTaskBut:hover{
+    background-color: rgb(218, 129, 129);
+}
+#addTaskBut:active{
+    background-color: #3b9b6b;
+}
