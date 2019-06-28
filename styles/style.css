@@ -30,3 +30,8 @@ div{
 #addTaskBut:active{
     background-color: #3b9b6b;
 }
+.divForTextTask{
+    background-color: #a0a8a4;
+    size: 50%;
+    text-justify: auto;
+}
