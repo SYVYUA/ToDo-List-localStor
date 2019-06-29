@@ -5,14 +5,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <body>
-        <div class="forInput">
-            <input id="inputField" size="70%" type="text" placeholder="Add new task">
-            <button id="addTaskBut" type="button" onclick="addNewElement()">Add</button>
-        </div>
-        
-        <ul id="myUl">
-            <li class="todoItem" draggable="true"></li>
-        </ul>
+            <div class="wrapper">
+                    <div class="header">
+                        <h1>TODO LIST</h1>
+                        <input type="text" placeholder="Add new event..." id="toDoEl">
+                        <span class="addBtn" onclick="newElement()">Add</span>
+                    </div>
+                    <ul id="list">
+                
+                    </ul>
+                </div>
     </body>
     <script src="script/jsScript.js"></script>
 </html>
