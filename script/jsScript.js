@@ -2,7 +2,7 @@ let list = document.querySelector('ul');
 let todos;
 function toLocal(){
 	todos = list.innerHTML;
-	localStorage.setItem("todos",todos);
+	localStorage.setItem("todos", todos);
 }
 
 list.addEventListener('click', function (ev) {
@@ -16,6 +16,8 @@ list.addEventListener('click', function (ev) {
     }
 }, false);
 
+
+
 function newElement() {
   //for date
   let date = new Date();
@@ -26,19 +28,20 @@ function newElement() {
   let curr_minutes = date.getMinutes();
   let cur_second = date.getSeconds();
   var d = (curr_date + "." + curr_month + "." + curr_year+"<br>"+curr_hour+":"+curr_minutes+":"+cur_second+" ");
-  let divTime = document.createElement("div");
+  let divTime = document.createElement("li");
   divTime.style.textAlign = "left";
+  divTime.style.color = "red";
   divTime.innerHTML = d;
 //***************************/
-    let li = document.createElement("li");
+    let li = document.createElement("div");
     let inputValue = document.getElementById('toDoEl').value;
     let t = document.createTextNode(inputValue);
     li.appendChild(t);
+    li.style.color = "black";
     if(inputValue == "") {
        alert("Field must not to be empty!");
     } else{
-       document.getElementById('list').appendChild(divTime);
-       document.getElementById('list').appendChild(li);
+       document.getElementById('list').appendChild(divTime).appendChild(li);
     }
     document.getElementById('toDoEl').value = "";
     let span = document.createElement('SPAN');
@@ -46,6 +49,7 @@ function newElement() {
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
+    divTime.appendChild(span);
 	 toLocal();
 }
 
