@@ -5,7 +5,6 @@ function toLocal(){
 	localStorage.setItem("todos",todos);
 }
 
-
 list.addEventListener('click', function (ev) {
     if(ev.target.tagName === "LI") {
        ev.target.classList.toggle('checked');
@@ -47,7 +46,7 @@ function newElement() {
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
-	  toLocal();
+	 toLocal();
 }
 
 if(localStorage.getItem("todos")){
