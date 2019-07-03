@@ -16,23 +16,22 @@ list.addEventListener('click', function (ev) {
     }
 }, false);
 
-
-
 function newElement() {
   //for date
-  let date = new Date();
-  let curr_date = date.getDate();
-  let curr_month = date.getMonth()+1;//+1 бо почина з 0 і випада місяць на 1 менше
-  let curr_year = date.getFullYear();
-  let curr_hour = date.getHours();
-  let curr_minutes = date.getMinutes();
-  let cur_second = date.getSeconds();
-  var d = (curr_date + "." + curr_month + "." + curr_year+"<br>"+curr_hour+":"+curr_minutes+":"+cur_second+" ");
-  let divTime = document.createElement("li");
-  divTime.style.textAlign = "left";
-  divTime.style.color = "red";
-  divTime.innerHTML = d;
-//***************************/
+   let date = new Date();
+   let curr_date = date.getDate();
+   let curr_month = date.getMonth()+1;//+1 бо почина з 0 і випада місяць на 1 менше
+   let curr_year = date.getFullYear();
+   let curr_hour = date.getHours();
+   let curr_minutes = date.getMinutes();
+   let cur_second = date.getSeconds();
+   var d = (curr_date + "." + curr_month + "." + curr_year+"<br>"+curr_hour+":"+curr_minutes+":"+cur_second+" ");
+   let divTime = document.createElement("li");
+   divTime.style.textAlign = "left";
+   divTime.style.color = "red";
+   divTime.innerHTML = d;
+   //***************************/
+
     let li = document.createElement("div");
     let inputValue = document.getElementById('toDoEl').value;
     let t = document.createTextNode(inputValue);
